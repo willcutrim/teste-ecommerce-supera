@@ -25,6 +25,6 @@ class CarrinhoPostView(APIView):
 class CarrinhoHistoryView(APIView):
     def get(self, request, user):
             carrinho_list = Carrinho.objects.filter(user=user)
-            serializer = CarrinhoSerializer(carrinho_list, many=True)
+            serializer = CarrinhoSerializerList(carrinho_list, many=True)
             return Response(serializer.data)
     
