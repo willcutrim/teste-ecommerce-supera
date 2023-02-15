@@ -10,7 +10,7 @@ execute os comandos:
 python manage.py makemigrations / python manage.py migrate
 ```
 
-Depois excute o projeto:
+Depois execute o projeto:
 ```
 python manage.py runserver
 ```
